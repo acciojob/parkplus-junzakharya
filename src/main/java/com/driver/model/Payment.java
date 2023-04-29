@@ -38,7 +38,7 @@ public class Payment {
         return isPaymentCompleted;
     }
 
-    public void setPaymentCompleted(Boolean paymentCompleted) {
+    public void isPaymentCompleted(Boolean paymentCompleted) {
         isPaymentCompleted = paymentCompleted;
     }
 
