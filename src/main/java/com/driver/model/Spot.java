@@ -15,7 +15,7 @@ public class Spot {
 
     int pricePerHour;
 
-    Boolean accepted;
+    Boolean occupied;
 
     @ManyToOne
     @JoinColumn
@@ -27,11 +27,11 @@ public class Spot {
     public Spot() {
     }
 
-    public Spot(int id, SpotType spotType, int pricePerHour, Boolean accepted, ParkingLot parkingLot, List<Reservation> reservationList) {
+    public Spot(int id, SpotType spotType, int pricePerHour, Boolean occupied, ParkingLot parkingLot, List<Reservation> reservationList) {
         this.id = id;
         this.spotType = spotType;
         this.pricePerHour = pricePerHour;
-        this.accepted = accepted;
+        this.occupied = occupied;
         this.parkingLot = parkingLot;
         this.reservationList = reservationList;
     }
@@ -60,12 +60,12 @@ public class Spot {
         this.pricePerHour = pricePerHour;
     }
 
-    public Boolean getAccepted() {
-        return accepted;
+    public Boolean getOccupied() {
+        return occupied;
     }
 
-    public void setAccepted(Boolean accepted) {
-        this.accepted = accepted;
+    public void setOccupied(Boolean accepted) {
+        this.occupied = accepted;
     }
 
     public ParkingLot getParkingLot() {

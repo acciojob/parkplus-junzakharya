@@ -50,7 +50,7 @@ public class ReservationServiceImpl implements ReservationService {
             reservationRepository3.save(reservation);
 
             minimumPriceSpot.getReservationList().add(reservation);
-            minimumPriceSpot.setAccepted(true);
+            minimumPriceSpot.setOccupied(true);
 
             spotRepository3.save(minimumPriceSpot);
 
