@@ -8,6 +8,7 @@ import java.util.List;
 @Table(name = "spot")
 public class Spot {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
     @Enumerated(EnumType.STRING)

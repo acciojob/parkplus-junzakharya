@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "payment")
 public class Payment {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
     Boolean isPaymentCompleted;

@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "reservation")
 public class Reservation {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
     int numberOfHours;
